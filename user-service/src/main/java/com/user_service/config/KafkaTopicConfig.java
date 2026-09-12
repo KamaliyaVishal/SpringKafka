@@ -8,12 +8,20 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class KafkaTopicConfig {
 
-    @Value("${Kafka.topics.usertopic}")
+    @Value("${Kafka.topics.userTopic}")
     private String userTopic;
 
+    @Value("${Kafka.topics.userCreatedTopic}")
+    private String userCreatedTopic;
+
     @Bean
-    public NewTopic newTopic() {
+    public NewTopic newUserTopic() {
         return new NewTopic(userTopic, 3, (short) 1);
+    }
+
+    @Bean
+    public NewTopic newUserCreatedTopic() {
+        return new NewTopic(userCreatedTopic, 3, (short) 1);
     }
 
 }

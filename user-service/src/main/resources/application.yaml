@@ -3,6 +3,9 @@ spring:
     name: user-service
   kafka:
     bootstrap-servers: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.LongSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JacksonJsonSerializer
 
   # PostgresSQL Database Connection Settings
   datasource:
@@ -24,4 +27,5 @@ server:
   port: 8080
 
 Kafka.topics:
-  usertopic: user-topic
+  userTopic: user-topic
+  userCreatedTopic: user-created-topic

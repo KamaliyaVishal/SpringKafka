@@ -5,6 +5,13 @@ spring:
     bootstrap-servers: localhost:9092
     consumer:
       group-id: ${spring.application.name}
+      key-deserializer: org.apache.kafka.common.serialization.LongDeserializer
+      # Use ErrorHandlingDeserializer as the entry point
+      value-deserializer: org.springframework.kafka.support.serializer.ErrorHandlingDeserializer
+      properties:
+        # Delegate the actual JSON work to the JsonDeserializer
+        spring.deserializer.value.delegate.class: org.springframework.kafka.support.serializer.JacksonJsonDeserializer
+        spring.json.trusted.packages: "com.user_service.*"
 
   # PostgresSQL Database Connection Settings
   datasource:
@@ -26,4 +33,5 @@ server:
   port: 8081
 
 Kafka.topics:
-  usertopic: user-topic
+  userTopic: user-topic
+  userCreatedTopic: user-created-topic
