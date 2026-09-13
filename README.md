@@ -42,8 +42,7 @@ Common use cases: event-driven microservices, log aggregation, real-time analyti
 
 ## Kafka Architecture
 
-[![Kafka Visualisation](docs/kafka-viz.png)](https://softwaremill.com/kafka-visualisation/)
-
+🔗 [Explore Kafka's architecture interactively](https://softwaremill.com/kafka-visualisation/)
 
 ```
                      ┌─────────────────────────────┐
