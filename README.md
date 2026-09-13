@@ -42,17 +42,7 @@ Common use cases: event-driven microservices, log aggregation, real-time analyti
 
 ## Kafka Architecture
 
-<h3 align="center">Kafka Architecture Visualization</h3>
-<p align="center">
-  <iframe 
-    src="https://softwaremill.com/kafka-visualisation/" 
-    width="100%" 
-    height="500px" 
-    frameborder="0" 
-    scrolling="yes" 
-    allowfullscreen>
-  </iframe>
-</p>
+[![Try the interactive Kafka visualizer](https://img.shields.io/badge/SoftwareMill-Kafka%20Visualizer-231F20?style=for-the-badge&logo=apachekafka)](https://softwaremill.com/kafka-visualisation/)
 
 
 
