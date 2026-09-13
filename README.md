@@ -42,6 +42,10 @@ Common use cases: event-driven microservices, log aggregation, real-time analyti
 
 ## Kafka Architecture
 
+### 🌐 Interactive Visualisation
+Explore the live architecture simulator on the [SoftwareMill Kafka Visualisation Tool](https://softwaremill.com/kafka-visualisation/).
+
+
 ```
                      ┌─────────────────────────────┐
                      │         Kafka Cluster        │
